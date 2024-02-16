@@ -28,7 +28,7 @@ for entry in os.listdir(os.path.join(os.environ["HOME"], "recipes")):
     if entry == "simple_meals":
         with open(entry, "r") as fin:
             for line in fin:
-                filelist.append(line.rstrip())
+                filelist.append("[" + line.rstrip() + "]")
         continue
     filelist.append(entry)
 
